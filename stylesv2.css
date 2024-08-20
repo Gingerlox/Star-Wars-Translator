@@ -1,0 +1,133 @@
+.nav-container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 400px) {
+    .nav-container {
+        width: 95%;
+        justify-content: center;
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+.main-container {
+    width: 80%;
+    margin: auto;
+}
+
+@media (max-width: 400px) {
+    .main-container {
+        width: 95%;
+    }
+
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1.2rem;
+    
+}
+
+
+
+.trans-boxes-container {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    gap: 10px;
+   
+
+}
+@media (max-width: 400px) {
+    .trans-boxes-container {
+        flex-wrap: wrap;
+    }
+
+}
+
+
+
+.inputs {
+    resize: none;
+    width: 32rem;
+    height: 18rem;
+    background: linear-gradient(#ffffff, #fcf3e9);
+    border: 2px solid #ccc5b9;
+    padding: 10px;
+    outline-style: none;
+    font-family: "Roboto", sans-serif;
+
+}
+@media (max-width: 400px) {
+    .inputs {
+        background: linear-gradient(#fcf3e9, #ffffff);
+        height: 13rem;
+    }
+}
+
+h1 {
+    
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    
+
+}
+@media (max-width: 400px) {
+    h1 {
+        font-size: 9.5vw;
+      
+    }
+}
+
+
+header {
+    background-color: #403d39ea;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: sticky;
+    top: 0px;
+    backdrop-filter: blur(6px);
+    border-bottom: 2px solid #eb5e28;
+    width: 100%;
+    
+}
+
+main {
+    background-color: #faf8f1;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    border-bottom: 2px solid #eb5e28;
+}
+
+
+
+p {
+    color: #403d39;
+    font-family: "Roboto", sans-serif;
+    border-top: 5px solid #403d39;
+    padding-top: 1rem;
+}
+
+@font-face { 
+    font-family: "Aurebesh"; 
+    src: url('Aurebesh.otf');
+ } 
+
+.input_2 {
+   font-family: "Aurebesh";
+}
+
+
