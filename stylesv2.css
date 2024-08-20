@@ -6,7 +6,7 @@
     justify-content: space-between;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 550px) {
     .nav-container {
         width: 95%;
         justify-content: center;
@@ -22,7 +22,7 @@
     margin: auto;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 550px) {
     .main-container {
         width: 95%;
     }
@@ -51,7 +51,7 @@ nav ul {
    
 
 }
-@media (max-width: 400px) {
+@media (max-width: 550px) {
     .trans-boxes-container {
         flex-wrap: wrap;
     }
@@ -71,7 +71,7 @@ nav ul {
     font-family: "Roboto", sans-serif;
 
 }
-@media (max-width: 400px) {
+@media (max-width: 550px) {
     .inputs {
         background: linear-gradient(#fcf3e9, #ffffff);
         height: 13rem;
@@ -85,7 +85,7 @@ h1 {
     
 
 }
-@media (max-width: 400px) {
+@media (max-width: 550px) {
     h1 {
         font-size: 9.5vw;
       
