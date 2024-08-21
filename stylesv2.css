@@ -26,7 +26,7 @@
     .main-container {
         width: 95%;
     }
-    
+
 
 }
 
@@ -39,7 +39,7 @@ nav ul {
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 1.2rem;
-    
+
 }
 
 
@@ -49,16 +49,17 @@ nav ul {
     margin-bottom: 50px;
     justify-content: space-between;
     gap: 10px;
-   
+    position: relative; /*needs to keep button in place*/
+
 
 }
+
 @media (max-width: 550px) {
     .trans-boxes-container {
         flex-wrap: wrap;
     }
 
 }
-
 
 
 .inputs {
@@ -72,6 +73,7 @@ nav ul {
     font-family: "Roboto", sans-serif;
 
 }
+
 @media (max-width: 550px) {
     .inputs {
         background: linear-gradient(#fcf3e9, #ffffff);
@@ -79,17 +81,20 @@ nav ul {
     }
 }
 
+
+
 h1 {
-    
+
     color: #ffffff;
     font-family: "Roboto", sans-serif;
-    
+
 
 }
+
 @media (max-width: 550px) {
     h1 {
         font-size: 9.5vw;
-      
+
     }
 }
 
@@ -103,7 +108,9 @@ header {
     backdrop-filter: blur(6px);
     border-bottom: 2px solid #eb5e28;
     width: 100%;
-    
+    /*this stops the textarea div drawing over teh nav div, which was caused by chaing position attribute to fix the button in place*/
+    z-index: 1;   
+
 }
 
 main {
@@ -112,10 +119,11 @@ main {
     padding-bottom: 4rem;
     border-bottom: 2px solid #eb5e28;
 }
+
 @media (max-width: 550px) {
     main {
         padding-top: 1rem;
-      
+
     }
 }
 
@@ -128,13 +136,38 @@ p {
     padding-top: 1rem;
 }
 
-@font-face { 
-    font-family: "Aurebesh"; 
+@font-face {
+    font-family: "Aurebesh";
     src: url('Aurebesh.otf');
- } 
-
-.input_2 {
-   font-family: "Aurebesh";
 }
 
+.input_2 {
+    font-family: "Aurebesh";
+}
 
+button {
+    position: absolute;    /*this keeps button fixed in place*/
+    left: 10px;
+    bottom: 10px;
+    font-family: "Roboto", sans-serif;
+    padding: 5px 10px;
+    border: 2px solid #eb5e28;
+    background-color: #403d3900;
+    transition: all 200ms;
+
+}
+button:hover {
+    cursor: pointer;
+    background-color: #eb5f28b7;
+    color: #ffffff;
+    
+}
+
+@media (max-width: 550px) {
+    button {
+        position: absolute;
+        left: 10px;
+        bottom: 255px;
+
+    }
+}
