@@ -49,7 +49,8 @@ nav ul {
     margin-bottom: 50px;
     justify-content: space-between;
     gap: 10px;
-    position: relative; /*needs to keep button in place*/
+    position: relative;
+    /*needs to keep button in place*/
 
 
 }
@@ -109,7 +110,7 @@ header {
     border-bottom: 2px solid #eb5e28;
     width: 100%;
     /*this stops the textarea div drawing over teh nav div, which was caused by chaing position attribute to fix the button in place*/
-    z-index: 1;   
+    z-index: 1;
 
 }
 
@@ -146,21 +147,39 @@ p {
 }
 
 button {
-    position: absolute;    /*this keeps button fixed in place*/
+    position: absolute;
+    /*this keeps button fixed in place*/
     left: 10px;
     bottom: 10px;
     font-family: "Roboto", sans-serif;
     padding: 5px 10px;
     border: 2px solid #eb5e28;
     background-color: #403d3900;
-    transition: all 200ms;
+    transition: all 100ms;
 
 }
-button:hover {
+
+/* button:hover {
     cursor: pointer;
     background-color: #eb5f28b7;
     color: #ffffff;
     
+} */
+
+@media(hover: hover) and (pointer: fine) {
+    button:hover {
+        cursor: pointer;
+        background-color: #eb5f28b7;
+        color: #ffffff;
+    }
+}
+
+@media (max-width: 550px) {
+    button:active {
+        cursor: pointer;
+        background-color: #eb5f28b7;
+        color: #ffffff;
+    }
 }
 
 @media (max-width: 550px) {
