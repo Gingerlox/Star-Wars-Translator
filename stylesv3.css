@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #FFD60A;
+    background-color: #FFC300;
     border: 5px solid #000814c7;
 }
 
@@ -26,11 +26,21 @@ h1 {
     outline-offset: -.8rem;
 }
 
+main p {
+    font-family: "Expletus Sans", sans-serif;
+    margin: 1rem;
+    font-style: italic;
+    font-weight: 800;
+    text-align: center;
+
+}
+
 .trans-container {
     display: flex;
     flex-direction: column;
-    padding: 0 1rem;
+    padding: 0 1rem 1rem 1rem;
     gap: 1rem;
+    /* border-bottom: 5px solid #000814c7; */
 }
 
 textarea {
@@ -45,12 +55,42 @@ textarea {
 }
 
 textarea:focus {
-    outline: 2px solid #FFD60A;
+    outline: 2px solid #FFC300;
     outline-offset: -4px;
 }
 
 .trans-container textarea:nth-of-type(2) {
     font-family: "Aurebesh";
+}
+
+main p:nth-of-type(2) {
+    font-style: normal;
+    margin-bottom: 2rem;
+}
+
+.github {
+    width: 15%;
+    display: inline-block;
+    transition: all 300ms;
+}
+
+.github:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    font-style: normal;
+    color: #FFD60A;
+    background-color: #000814c7;
+    padding: 0.7rem;
+    width: fit-content;
+    margin: 1rem auto;
+    outline: 2px solid #FFC300;
+    outline-offset: -5px;
 }
 
 @media (min-width: 600px) {
@@ -66,10 +106,19 @@ textarea:focus {
         border: 5px solid #000814b9;
         border-radius: 10px;
         outline: 5px solid #FFC300;
-        background-color: #FFD60A;
+        background-color: #FFC300;
+        margin: 2rem 0;
     }
 
     textarea {
         font-size: 1.8rem;
+    }
+
+    footer p {
+        font-size: 1.2rem;
+    }
+
+    main > p {
+        font-size: 1.2rem;
     }
 }
