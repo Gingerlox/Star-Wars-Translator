@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "Aurebesh";
+    src: url('assets/Aurebesh.otf');
+}
+
+body {
+    background-color: #FFD60A;
+    border: 5px solid #000814c7;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    font-family: "Kode Mono", sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFD60A;
+    padding: 1rem 1rem;
+    text-align: center;
+    background-color: #000814c7;
+    margin-bottom: 1rem;
+    outline: 5px solid #ffc4009a;
+    outline-offset: -.8rem;
+}
+
+.trans-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    gap: 1rem;
+}
+
+textarea {
+    font-family: "Expletus Sans", sans-serif;
+    font-weight: 600;
+    color: #000814;
+    padding: .5rem;
+    resize: none;
+    font-size: 1.5rem;
+    border: 2px solid #00081493;
+    height: 250px;
+}
+
+textarea:focus {
+    outline: 2px solid #FFD60A;
+    outline-offset: -4px;
+}
+
+.trans-container textarea:nth-of-type(2) {
+    font-family: "Aurebesh";
+}
+
+@media (min-width: 600px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000814;
+    }
+
+    .wrapper {
+        padding: 2.5rem;
+        border: 5px solid #000814b9;
+        border-radius: 10px;
+        outline: 5px solid #FFC300;
+        background-color: #FFD60A;
+    }
+
+    textarea {
+        font-size: 1.8rem;
+    }
+}

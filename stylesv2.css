@@ -46,12 +46,12 @@ nav ul {
 
 .trans-boxes-container {
     display: flex;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     justify-content: space-between;
     gap: 10px;
     position: relative;
     /*needs to keep button in place*/
-
+    border-bottom: 4px solid #403d39;
 
 }
 
@@ -133,13 +133,14 @@ main {
 p {
     color: #403d39;
     font-family: "Roboto", sans-serif;
-    border-top: 5px solid #403d39;
     padding-top: 1rem;
+    max-width: 60ch;   /*max width makes it responsive, 60ch is ideal text length*/
+    margin: 0 auto;
 }
 
 @font-face {
     font-family: "Aurebesh";
-    src: url('Aurebesh.otf');
+    src: url('assets/Aurebesh.otf');
 }
 
 .input_2 {
@@ -150,7 +151,7 @@ button {
     position: absolute;
     /*this keeps button fixed in place*/
     left: 10px;
-    bottom: 10px;
+    bottom: 60px;
     font-family: "Roboto", sans-serif;
     padding: 5px 10px;
     border: 2px solid #eb5e28;
@@ -176,7 +177,7 @@ button {
 
 @media (max-width: 550px) {
     button:active {
-        cursor: pointer;
+        /* cursor: pointer; */
         background-color: #eb5f28b7;
         color: #ffffff;
     }
@@ -186,7 +187,7 @@ button {
     button {
         position: absolute;
         left: 10px;
-        bottom: 255px;
+        bottom: 305px;
 
     }
 }
