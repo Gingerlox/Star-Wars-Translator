@@ -9,8 +9,7 @@ body {
 }
 
 .wrapper {
-    width: 100%;
-    max-width: 600px;
+    width: min(600px, 100%)
 }
 
 h1 {
@@ -32,7 +31,11 @@ main p {
     font-style: italic;
     font-weight: 800;
     text-align: center;
+}
 
+span {
+    font-size: 0.8rem;
+    font-style: normal;
 }
 
 .trans-container {
@@ -40,7 +43,6 @@ main p {
     flex-direction: column;
     padding: 0 1rem 1rem 1rem;
     gap: 1rem;
-    /* border-bottom: 5px solid #000814c7; */
 }
 
 textarea {
@@ -59,7 +61,7 @@ textarea:focus {
     outline-offset: -4px;
 }
 
-.trans-container textarea:nth-of-type(2) {
+#two {
     font-family: "Aurebesh";
 }
 
@@ -93,6 +95,32 @@ footer p {
     outline-offset: -5px;
 }
 
+.button-box {
+    display: flex;
+    position: relative;
+}
+
+.butt {
+    position: absolute;
+    inset: 200px 20px 15px 20px;
+    font-family: "Expletus Sans", sans-serif;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #000814c7;
+    color: whitesmoke;
+    font-weight: 800;
+}
+
+.butt:active {
+    background-color: #03142ee8;
+}
+
+#one {
+    width: 100%;
+}
+
+/* DESKTOP STYLES */
+
 @media (min-width: 600px) {
     body {
         display: flex;
@@ -104,10 +132,15 @@ footer p {
     .wrapper {
         padding: 2.5rem;
         border: 5px solid #000814b9;
-        border-radius: 10px;
+        border-radius: 5px;
         outline: 5px solid #FFC300;
         background-color: #FFC300;
         margin: 2rem 0;
+    }
+
+    span {
+        font-size: 1rem;
+        display: block;
     }
 
     textarea {
@@ -120,5 +153,17 @@ footer p {
 
     main > p {
         font-size: 1.2rem;
+    }
+
+    .butt {
+        inset: 220px 20px 15px 20px;
+        font-size: 1.5rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 200ms;
+    }
+
+    .butt:hover {
+        background-color: #03142ee8;
     }
 }

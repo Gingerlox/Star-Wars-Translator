@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Connor McLaughlin">
     <meta name="description" content="A simple translator for all of your Aurebesh translation needs!">
-    <meta name="keywords" content="star wars, aurebesh, translator, sci fi, galaxy"/>  
+    <meta name="keywords" content="star wars, aurebesh, translator, sci fi, galaxy" />
     <link rel="stylesheet" type="text/css" href="reset.css" />
     <link rel="stylesheet" type="text/css" href="stylesv3.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,11 +24,15 @@
             <h1>Aurebesh Translator</h1>
         </header>
         <main>
-            <p>"Aurebesh is for the common folk. Snobs like Villachor are way too upper-level for that." -Lando
-                Calrissian, to Tavia Kitik</p>
+            <p>"Aurebesh is for the common folk. Snobs like Villachor are way too upper-level for that." <span>
+                    -Lando
+                    Calrissian, to Tavia Kitik
+                </span></p>
             <div class="trans-container">
-                <textarea name="english_text" id="one" placeholder="Enter text here .."></textarea>
-                <!-- <button id="quote_gen">Generate Random Scentence</button> -->
+                <div class="button-box">
+                    <textarea name="english_text" id="one" placeholder="Enter text here .."></textarea>
+                    <button class="butt" id="quote_gen">Generate Random Scentence</button>
+                </div>
                 <textarea name="translated_text" id="two" placeholder="" spellcheck="false"></textarea>
             </div>
             <p>Aurebesh was a writing system commonly used to represent the Basic language. Its name was a portmanteau
