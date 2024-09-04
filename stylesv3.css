@@ -9,7 +9,7 @@ body {
 }
 
 .wrapper {
-    width: min(600px, 100%)
+    width: min(1000px, 100%)
 }
 
 h1 {
@@ -125,17 +125,21 @@ footer p {
     body {
         display: flex;
         justify-content: center;
-        align-items: center;
         background-color: #000814;
+        border: none;
     }
 
     .wrapper {
         padding: 2.5rem;
-        border: 5px solid #000814b9;
-        border-radius: 5px;
+        /* border: 5px solid #000814b9; */
         outline: 5px solid #FFC300;
         background-color: #FFC300;
-        margin: 2rem 0;
+        outline-offset: 10px;
+    }
+
+    .trans-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     span {
@@ -157,7 +161,7 @@ footer p {
 
     .butt {
         inset: 220px 20px 15px 20px;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: 500;
         cursor: pointer;
         transition: 200ms;

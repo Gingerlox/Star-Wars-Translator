@@ -88,3 +88,10 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex;
 }
+
+p,
+li,
+figcaption {
+  max-width: 65ch;
+  text-wrap: pretty;
+}
